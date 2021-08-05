@@ -1,0 +1,7 @@
+ex:
+
+location=[]
+restrorent=[]
+for i,k in df.groupby('location'):
+    location.append(i)
+    restrorent.append(len(k['name'].unique()))
